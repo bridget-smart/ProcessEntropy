@@ -33,7 +33,7 @@ def fnv(data):
     for byte in data:
         hval = (hval * 0x100000001b3) % 2**32
         hval = hval ^ byte
-    return np.uint32(hval)
+    return hval
 
 
 def custom_tokenize(text, basic_tokenize = False):
